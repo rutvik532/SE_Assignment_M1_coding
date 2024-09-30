@@ -1,22 +1,24 @@
- /*5. Check Number Is Positive or Negative*/
-
-#include<stdio.h>
+/*5. Write a program in C to compare two strings without using string library 
+functions.*/
+#include<string.h>
 main()
 {
-	int a;
+	char name1[30],name2[30];
 	
-	printf("Enter the number for checking positive or negative:");
-	scanf("%d", &a);
 	
-	if (a>=0)
+	printf("Enter a name1:");
+	gets(name1);
+	printf("Enter a name2:");
+	gets(name2);
 	
-	{
-		printf("Enter number is positive");
-	}
-	
-	else 
-	{
-		printf("Enter number is negative");
-	}
-}
+	if(stricmp(name1,name2)==0)
 
+		printf("\nstring are equal");
+	
+	
+	else
+	
+		printf("string are not equal");
+	
+	
+}

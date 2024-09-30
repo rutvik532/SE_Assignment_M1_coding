@@ -1,22 +1,36 @@
-/*10. WAP to check whether a number is negative, positive or zero.*/
-#include<stdio.h>
-main()
+/*10. Write a program you have to make a summation of first and last Digit. (E.g., 
+1234 Ans: -5) */
+
+#include <stdio.h>
+
+int main()
 {
-	int number;
-	
-	printf("Enter the number:");
-	scanf("%d", &number);
-	
-	if(number >0)
-	{
-		printf("Enter number is positive");
-	}
-	else if(number<0)
-	{
-		printf("Enter number is negative");
-	}
-	else
-	{
-		printf("Enter number is zero");
-	}
+    int num, sum=0, firstDigit, lastDigit;
+
+    /* Input a number from user */
+    printf("Enter any number to find sum of first and last digit: ");
+    scanf("%d", &num);
+    
+    
+    lastDigit = num % 10;
+    
+
+  
+   
+
+   
+    while(num >= 10)
+    {
+        num = num / 10;
+    }
+    firstDigit = num;
+
+
+    
+    sum = firstDigit + lastDigit; 
+
+    printf("Sum of first and last digit = %d", sum);
+
+    
+
 }

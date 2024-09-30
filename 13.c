@@ -1,16 +1,29 @@
-/*13. WAP to find minimum number among 3 numbers using ternary operator */
+/*13. calculate the Factorial of a Given Number using while loop */
+
 #include<stdio.h>
-main()
-{
-	
-	int a,b;
-	
-	printf("Enter the value of a:");
-	scanf("%d", &a);
-	
-	printf("Enter the value of b:");
-	scanf("%d", &b);
-	
-	a>b? printf("%d is min", b): printf("%d is min ", a);
-	
+#include <stdio.h>
+
+int main() {
+    int num, factorial = 1, i = 1;
+
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+
+    
+        
+        while (i <= num) {
+            factorial *= i;  
+            i++;             
+        }
+
+        
+        printf("Factorial of %d is: %d\n", num, factorial);
+    }
+
+    return 0;
 }
+
+
+

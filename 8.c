@@ -1,54 +1,28 @@
-/*8. WAP to accept the height of a person in centimeters and categorize the 
-person according to their height. */
-
+/*8. Write a program in C to count the total number of vowels or consonants in a 
+string. */
 #include<stdio.h>
 main()
-
-{
-	int height;
+{	 
+	char name[30];
+	int i=0,v=0,c=0;
 	
-	printf("Enter the person height in cm:");
-	scanf("%d", &height);
+	printf("Enter a name:");
+	gets(name);
 	
-	if (height<=45)
-	
+	while(name[i]!='\0')
 	{
-		printf("Enter height person is 1 year old");
-	}
-	
-	else if (height<=60)
-	
-	{
-		printf("Enter height person is 3 year old");
-	}
-	
-	else if (height<=90)
-	{
-		printf("Enter height person is 4 year old");
-	}
-	else if (height<=120)
-	{
-		printf("Enter height person is 12 year old");
-	}
-	else if (height<=150)
-	{
-		printf("Enter height person is 15 year old");
-	}
-	else if(height<=180)
-	
-	{
-		printf("Enter height person is 20 year old");
+		if (name[i] == 'A'||'E'||'I'||'O'||'U'||'a'||'e'||'i'||'o'||'u')
+		{
+			v++;
+		}
 		
+		else
+		{
+			c++;
+		}
+		i++;
 	}
+	printf("\nTotal vowel:%d",v);
+	printf("\nTotal consonant:%d",c);
 	
-	else if (height<=210)
-	{
-		printf("Enter height person is 24 year old");
-		
-	}
-	
-	else 
-	{
-		printf("Enter invalid height");
-	}
 }

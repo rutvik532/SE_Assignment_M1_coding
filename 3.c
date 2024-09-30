@@ -1,25 +1,22 @@
-/*3. WAP to check if the given year is a leap year or not.*/
+/*3. Write a program in C to print individual characters of a string in reverse order */
 
 #include<stdio.h>
 main()
 {
+	char str1[10];
+	int i, len;
 	
-	int year;
+	printf("\n\n\t Enter a string : ");
+	scanf("%s",&str1);
+	len=strlen(str1);
 	
-	printf("Enter the year for checking year is leap year or not:");
-	scanf("%d", &year);
 	
-	if (year%4==0)
-	
+	for(i=len-1;i>=0;i--)
 	{
-		printf("The year is leap year");
+		printf("\n%c", str1[i]);
 	
 	}
 	
-	else 
 	
-	{
-		printf("The year is not leap year");
-		
-	}
+	
 }

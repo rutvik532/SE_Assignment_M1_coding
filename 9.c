@@ -1,34 +1,19 @@
-/*9. C Program to Check Uppercase or Lowercase or Digit or Special 
-Character */
-
+/*9. Write a program make a summation of given number (E.g., 1523 Ans: -11) */
 #include<stdio.h>
 main()
 {
-	char ch;
+	int n,num,sum=0;
 	
-	printf("Enter any character:");
-	scanf("%c", &ch);
+	printf("Enter the number :");
+	scanf("%d", &n);
 	
-	if ('A'>=ch<='Z')
+	while(n>0)
 	{
-		printf("Enter character is Upper case");
+		num=n%10;
+		sum+=num;
+		n=n/10;
 		
 	}
 	
-	else if ('a'>=ch<='z')
-	{
-		printf("Enter character is lower case");
-		
-	}
-	
-	else if ('0'>=ch<='9')
-	
-	{
-		printf("Enter character is digit");
-		
-	}
-	else 
-	{
-		printf("Enter character is special");
-	}
+	printf("%d",sum);
 }

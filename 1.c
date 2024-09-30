@@ -1,29 +1,23 @@
-/*1. Write a C program to accept two integers and check whether they are equal 
-or not */
+/*1. Write a program in C to find the length of a string without using library 
+functions. */
 
 #include<stdio.h>
 main()
-
 {
+	char name[10];
 	
-	int a,b;
+	printf("Enter the name:");
+	gets(name);
 	
-	printf("Enter the value of a:");
-	scanf("%d", &a);
+	int i,count=0;
 	
-	printf("Enter the value of b:");
-	scanf("%d", &b);
-	
-	if (a==b)
-	
-	{ 
-		printf("The enter value are equal");
-		
-	}
-	
-	else 
+	for(i=0;name[i]!='\0';i++)
 	{
-		printf("The enter value are not equal ");
-		
+		printf("\n%c", name[i]);
+		count++;
 	}
+	
+	
+	printf("\nLenght of string:%d",count);
+	
 }

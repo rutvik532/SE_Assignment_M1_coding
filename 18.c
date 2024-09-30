@@ -1,27 +1,14 @@
-/*18. Write a C program to calculate profit and loss on a transaction.*/
+/*18. Write a C Program to Print the Multiplication Table of N */
 #include<stdio.h>
 main()
 {
-	int sellingprice,costprice;
+	int num,i;
 	
-	printf("Enter the selling price:");
-	scanf("%d", &sellingprice);
+	printf("Enter the number for multiplicatin:");
+	scanf("%d", &num);
 	
-	printf("Enter the cost price:");
-	scanf("%d", &costprice);
-	
-	if(sellingprice>costprice)
+	for (i=1;i<=10;i++)
 	{
-		printf("You profit this transaction");
-	}
-	else if (costprice>sellingprice)
-	{
-		printf("You loss this transaction");
-		
-	}
-	
-	else 
-	{
-		printf("neither loss neither profit ");
-	}
+	     printf("\n%d*%d=%d",num,i,num*i);	
+	}	
 }

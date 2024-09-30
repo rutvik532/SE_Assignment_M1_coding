@@ -1,17 +1,23 @@
-/*12. WAP to find maximum number among 3 numbers using ternary operator */
-
+/*15. Write a program in C to find the largest and smallest words in a string*/
 #include<stdio.h>
 main()
 {
-	int n1,n2;
-	printf("Enter numnber n1:");
-	scanf("%d", &n1);
-	printf("Enter numnber n2:");
-	scanf("%d", &n2);
+	char name[30];
 	
+	int i=0,max=0,min=0;
+	printf("Enter a name:");
+	gets(name);
 	
-
-	n1>n2?printf("%d is max",n1):printf("%d is max", n2);
-	
-	
+	for (i=0;name[i]!='\0';i++)
+	{
+		if (name[i]>max)
+		{	
+			max=name[i];
+			
+		}
+	 
+		
+		
+	}
+	printf("Largest worlds in name:%c",max);
 }
